@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "universiome",
+	"version": "${version}",
+	"name": "Universiome",
+	"description": "juste un mod pour le fun",
+	"authors": [
+		"Iron PNH"
+	],
+	"contact": {
+		"homepage": "https://ironpnh.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/universiome/icone.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ironpnh.universiome.Universiome"
+		],
+		"fabric-datagen": [
+			"net.ironpnh.universiome.UniversiomeDataGenerator"
+		],
+		"client": [
+			"net.ironpnh.universiome.UniversiomeClient"
+		]
+	},
+	"mixins": [
+		"universiome.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
